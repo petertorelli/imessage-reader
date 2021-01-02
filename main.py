@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
+
+# most of this code came from "michael-danello/iMessageWrapped" but he didn't have a license so I made this
+# MIT license since it's the best free for all.
+
 import getpass
 import os
 import sqlite3
 import re
 import pandas as pd
-
-# Most of this code came from somewhere on HackerNews, no idea who the person was that wrote it...
-# But there is attribution that is missing.
 
 ALL_TEXT = """
 SELECT
