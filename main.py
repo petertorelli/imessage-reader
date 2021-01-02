@@ -5,6 +5,9 @@ import sqlite3
 import re
 import pandas as pd
 
+# Most of this code came from somewhere on HackerNews, no idea who the person was that wrote it...
+# But there is attribution that is missing.
+
 ALL_TEXT = """
 SELECT
     message.text,
@@ -151,6 +154,7 @@ if __name__ == '__main__':
         if number[i] in contacts:
             ph = contacts[number[i]]
         else:
+        	# Original code broke if there was no contact
             ph = 'missing(' + number[i] + ')'
         print("%s %s - %s - %s" % (("to:" if isme[i] == 1 else "from:"), ph, dates[i], text[i]))
     #text = " ".join(text_df['text'])
