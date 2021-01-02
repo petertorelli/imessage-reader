@@ -155,7 +155,7 @@ if __name__ == '__main__':
         if number[i] in contacts:
             ph = contacts[number[i]]
         else:
-        	# Original code broke if there was no contact
+            # Original code broke if there was no contact
             ph = 'missing(' + number[i] + ')'
         print("%s %s - %s - %s" % (("to:" if isme[i] == 1 else "from:"), ph, dates[i], text[i]))
     #text = " ".join(text_df['text'])
